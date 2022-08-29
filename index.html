@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODE NUIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images.png">
+
+</head>
+
+<body class="body">
+    <div style="text-align: right; display:flex; align-items:center; justify-content:flex-end;">
+        <p style="font-weight: 700; font-size: 20px;color:rgb(223, 125, 6);">Mode nuit</p>
+        <div>
+            <label class="switch">
+                <input onclick="verifier()" id="case1" type="checkbox"> 
+               <span class="slider"></span><br>
+              </label>
+        </div>
+    </div>
+    <script>
+        function verifier() {
+            if (document.getElementById("case1").checked) {
+                document.body.style.backgroundColor = 'black';
+            } else {
+                document.body.style.backgroundColor = 'white';
+            }
+        }
+    </script>
+</body>
+
+</html>
